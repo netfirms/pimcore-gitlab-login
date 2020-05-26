@@ -6,7 +6,7 @@
  * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)
  */
 
-namespace GoogleLogin\OAuth2\Client\Provider;
+namespace GitlabLogin\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Token\AccessToken;
 
@@ -15,9 +15,9 @@ use League\OAuth2\Client\Token\AccessToken;
  *
  * Overwriting default provider class, so we could extract Hosted Domain information
  *
- * @package GoogleLogin\OAuth2\Client\Provider
+ * @package GitlabLogin\OAuth2\Client\Provider
  */
-class Google extends \League\OAuth2\Client\Provider\Google
+class Gitlab extends \League\OAuth2\Client\Provider\Google
 {
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {

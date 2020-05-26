@@ -1,5 +1,5 @@
 {
-    "name": "divante-ltd/pimcore-google-login",
+    "name": "netfirms/pimcore-gitlab-login",
     "type": "pimcore-plugin",
     "require": {
         "pimcore/installer-plugin": ">=1",
@@ -7,7 +7,7 @@
     },
     "autoload": {
         "psr-4": {
-            "GoogleLogin\\": "lib"
+            "GitlabLogin\\": "lib"
         }
     }
 }

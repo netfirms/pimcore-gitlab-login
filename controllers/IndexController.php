@@ -7,20 +7,20 @@
  */
 
 /**
- * Class GoogleLogin_IndexController
+ * Class GitlabLogin_IndexController
  *
  * Based on OAuth2 Client Example - nothing sophisticated
  *
- * @package GoogleLogin
+ * @package GitlabLogin
  */
-class GoogleLogin_IndexController extends \Pimcore\Controller\Action
+class GitlabLogin_IndexController extends \Pimcore\Controller\Action
 {
 
     /** @var Zend_Config */
     protected $config;
 
     /**
-     * GoogleLogin_IndexController constructor.
+     * GitlabLogin_IndexController constructor.
      * @param Zend_Controller_Request_Abstract $request
      * @param Zend_Controller_Response_Abstract $response
      * @param array $invokeArgs
@@ -29,18 +29,18 @@ class GoogleLogin_IndexController extends \Pimcore\Controller\Action
                                 Zend_Controller_Response_Abstract $response,
                                 array $invokeArgs = array())
     {
-        $configHelper = new \GoogleLogin\Helper\Config();
+        $configHelper = new \GitlabLogin\Helper\Config();
         $this->config = $configHelper->getConfig();
 
         parent::__construct($request, $response, $invokeArgs);
     }
 
     /**
-     * @return \GoogleLogin\OAuth2\Client\Provider\Google
+     * @return \GitlabLogin\OAuth2\Client\Provider\Gitlab
      */
     protected function getProvider()
     {
-        $provider = new \GoogleLogin\OAuth2\Client\Provider\Google([
+        $provider = new \GitlabLogin\OAuth2\Client\Provider\Gitlab([
             'clientId'     => $this->config->clientId,
             'clientSecret' => $this->config->clientSecret,
             'redirectUri'  => $this->config->redirectUri,
@@ -75,7 +75,7 @@ class GoogleLogin_IndexController extends \Pimcore\Controller\Action
     }
 
     /**
-     * IndexAction - gets auth data from Google and lets user in
+     * IndexAction - gets auth data from Gitlab and lets user in
      */
     public function indexAction()
     {

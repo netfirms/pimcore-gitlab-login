@@ -7,18 +7,18 @@
  */
 
 /**
- * Class GoogleLogin_AdminController
+ * Class GitlabLogin_AdminController
  *
- * @package GoogleLogin
+ * @package GitlabLogin
  */
-class GoogleLogin_AdminController extends \Pimcore\Controller\Action\Admin
+class GitlabLogin_AdminController extends \Pimcore\Controller\Action\Admin
 {
     /**
      * Index Action - makes config file editing possible
      */
     public function indexAction()
     {
-        $configHelper = new \GoogleLogin\Helper\Config();
+        $configHelper = new \GitlabLogin\Helper\Config();
         $config = $configHelper->getConfig();
 
         if (sizeof($params = $this->getAllParams()) > 4) {

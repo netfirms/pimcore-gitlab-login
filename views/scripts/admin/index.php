@@ -1,6 +1,6 @@
 <?php
 /**
- * @category    GoogleLogin
+ * @category    GitlabLogin
  * @date        19/05/2017 14:31
  * @author      Jakub Płaskonka <jplaskonka@divante.pl>
  * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)

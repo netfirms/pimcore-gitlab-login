@@ -14,7 +14,7 @@ use Pimcore\API\Plugin as PluginLib;
 /**
  * Class Plugin
  *
- * @package GoogleLogin
+ * @package GitlabLogin
  */
 class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterface
 {
@@ -32,7 +32,7 @@ class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterfa
 
                 if ($uri == '/admin/login' || $uri == '/admin') {
                     $frontController = \Zend_Controller_Front::getInstance();
-                    $frontController->getResponse()->setRedirect('/plugin/GoogleLogin/index/login');
+                    $frontController->getResponse()->setRedirect('/plugin/GitlabLogin/index/login');
                 }
             }
         );

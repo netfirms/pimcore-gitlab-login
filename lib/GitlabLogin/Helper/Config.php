@@ -6,12 +6,12 @@
  * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)
  */
 
-namespace GoogleLogin\Helper;
+namespace GitlabLogin\Helper;
 
 /**
  * Class Config
  *
- * @package GoogleLogin\Helper
+ * @package GitlabLogin\Helper
  */
 class Config
 {
@@ -19,7 +19,7 @@ class Config
     /**
      * Let's be sure it's unique
      */
-    const CONFIG_FILENAME = "googlelogin.php";
+    const CONFIG_FILENAME = "gitlablogin.php";
 
     /**
      * Gets config from file
