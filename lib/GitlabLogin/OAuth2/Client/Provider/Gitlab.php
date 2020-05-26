@@ -11,7 +11,7 @@ namespace GitlabLogin\OAuth2\Client\Provider;
 use League\OAuth2\Client\Token\AccessToken;
 
 /**
- * Class Google
+ * Class Gitlab
  *
  * Overwriting default provider class, so we could extract Hosted Domain information
  *

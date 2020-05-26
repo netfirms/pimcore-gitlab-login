@@ -14,8 +14,8 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/plugins/GoogleLogin/static/css/normalize.css">
-    <link rel="stylesheet" href="/plugins/GoogleLogin/static/css/skeleton.css">
+    <link rel="stylesheet" href="/plugins/GitlabLogin/static/css/normalize.css">
+    <link rel="stylesheet" href="/plugins/GitlabLogin/static/css/skeleton.css">
 </head>
 <body>
 
@@ -24,7 +24,7 @@
 <div class="container">
     <div class="row">
         <div class="one-half column" style="margin-top: 10%">
-            <h4><?=$this->t("google_login_config");?></h4>
+            <h4><?=$this->t("gitlab_login_config");?></h4>
             <?php if($this->saved): ?>
                 <?=$this->t("configuration_has_been_saved");?>
             <?php endif; ?>

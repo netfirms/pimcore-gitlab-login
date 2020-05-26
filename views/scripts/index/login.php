@@ -117,7 +117,7 @@ $config = \Pimcore\Config::getSystemConfig();
                 </form>
 
                 <div class="body lostpassword">
-                    <a href="/plugin/GoogleLogin"><img src="/plugins/GoogleLogin/static/images/login.png" style="width: 100%;"></a>
+                    <a href="/plugin/GitlabLogin"><img src="/plugins/GitlabLogin/static/images/login.png" style="width: 100%;"></a>
                     <a href="/admin/login/lostpassword" class="lostpassword"><?= $this->translate("Forgot your password"); ?>?</a>
                 </div>
             </div>

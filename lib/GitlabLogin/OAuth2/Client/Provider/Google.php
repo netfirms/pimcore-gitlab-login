@@ -6,7 +6,7 @@
  * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)
  */
 
-namespace GoogleLogin\OAuth2\Client\Provider;
+namespace GitlabLogin\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Token\AccessToken;
 

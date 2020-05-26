@@ -4,7 +4,7 @@ Pimcore  plugin that allows to use Gitlab credentials to log into Pimcore's admi
   - Log into Pimcore's admin panel using your Gitlab account (and two-step verification!)
 # Installation
 ```
-composer require microfabrix/pimcore-gitlab-login
+composer require netfirms/pimcore-gitlab-login
 ```
 After installation, go to Extensions in your Pimcore admin panel, click on configure. Fill up all the fields using data from Gitlab Access Control.
 

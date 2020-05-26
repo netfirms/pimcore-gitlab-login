@@ -6,9 +6,9 @@
  * @copyright   Copyright (c) 2017 Divante Ltd. (https://divante.co)
  */
 
-namespace GoogleLogin;
+namespace GitlabLogin;
 
-use GoogleLogin\Helper\Config;
+use GitlabLogin\Helper\Config;
 use Pimcore\API\Plugin as PluginLib;
 
 /**
@@ -59,7 +59,7 @@ class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterfa
     {
         $configHelper = new Config();
         $configHelper->deleteConfig();
-        return "Google Login Plugin has been uninstalled.";
+        return "Gitlab Login Plugin has been uninstalled.";
     }
 
     /**
